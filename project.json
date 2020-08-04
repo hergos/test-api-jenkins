@@ -1,0 +1,29 @@
+{
+	"title": "Portal Apis",
+	"host": "http://localhost:8082",
+	"basePath": "v2",
+	"paths": [
+		{
+			"method": "POST",
+			"path": "api/endpoints",
+			"name": "endpoint 1",
+			"description": "description endpoint 1",
+			"operation": "addRegister",
+			"security": {
+				"auth": "bearer",
+				"permissions": ["ROLE_ADMIN", "ROLE_GUEST"]
+			}
+		},
+		{
+			"method": "GET",
+			"path": "api/endpoints",
+			"name": "endpoint 1",
+			"description": "description endpoint 1",
+			"operation": "addRegister",
+			"security": {
+				"auth": "bearer",
+				"permissions": ["ROLE_ADMIN", "ROLE_GUEST"]
+			}
+		}
+	]
+}
